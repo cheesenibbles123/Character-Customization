@@ -1,4 +1,4 @@
-# Original-CharacterCustomization-thingy-bw-mod
+# Character Customization Mod
 This is the original first mod i made for BW to be released
 
 Features:
