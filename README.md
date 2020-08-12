@@ -8,3 +8,5 @@ Features:
 Additional notes:
  - I suck at this
  - Enjoy my crappy code
+
+# Will require Harmony Dll
