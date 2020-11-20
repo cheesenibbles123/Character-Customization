@@ -6,7 +6,11 @@ jobs:
   steps:
   - name: Checkout code
     uses: actions/checkout@v2
-  - name: Add MSBuild to PATH
-    uses: microsoft/setup-msbuild
+    id: checkout_code
+  - name: Setup MSBuild and add to PATH
+    uses: microsoft/setup-msbuild@v1.0.0
+    id: setup_msbuild
   - name: Run MSBuild
-    run: msbuild.exe .\Customization\Customization.proj
+    id: run_msbuild
+    working-directory: $
+    run: msbuild .\Customization.sln
