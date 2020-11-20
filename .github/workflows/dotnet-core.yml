@@ -1,0 +1,12 @@
+name: Character Customization Build
+on: [push]
+jobs:
+ build:
+  runs-on: windows-latest
+  steps:
+  - name: Checkout code
+    uses: actions/checkout
+  - name: Add MSBuild to PATH
+    uses: microsoft/setup-msbuild
+  - name: Run MSBuild
+    run: msbuild.exe .\Customization\Customization.proj
