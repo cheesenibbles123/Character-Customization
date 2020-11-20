@@ -5,7 +5,7 @@ jobs:
   runs-on: windows-latest
   steps:
   - name: Checkout code
-    uses: actions/checkout
+    uses: actions/checkout@v2
   - name: Add MSBuild to PATH
     uses: microsoft/setup-msbuild
   - name: Run MSBuild
