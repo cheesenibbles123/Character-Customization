@@ -1,5 +1,5 @@
 name: Character Customization Build
-on: [push]
+on: fork
 jobs:
  build:
   runs-on: windows-latest
